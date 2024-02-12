@@ -4,9 +4,11 @@ function test() {
         	sdk.methodName(attributes).then((res) => {
         		console.log("Data " + res)
         		alert(res)
+        		return res;
         	}).catch((err) => {
         		console.log("Error " + err)
         		alert(err)
+        		return err;
         	})
         })
        return "Data from js";
