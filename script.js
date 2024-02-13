@@ -1,16 +1,12 @@
-function test() {
-        console.log("Grant token data received = ");
+function fetchAuthToken() {
+        console.log("start");
         try{
-        console.log("build is going on");
         PhonePe.PhonePe.build(PhonePe.Constants.Species.web).then((sdk) => {
         	sdk.fetchAuthToken().then((res) => {
-        		console.log("Grant token data received = " + res);
         		console.log("Grant token data received = " + JSON.stringify(res));
-        		alert(res);
-        		return res;
+        		return JSON.stringify(res);
         	}).catch((err) => {
         		console.log("Error occurred while fetching the grant token: " + err);
-        		alert(err);
         		return err;
         	})
         });
@@ -18,5 +14,5 @@ function test() {
         catch(err){
         console.log("script error " + err);
         }
-        console.log("end ends");
+        console.log("End");
       }
