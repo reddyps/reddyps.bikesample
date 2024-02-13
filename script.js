@@ -12,5 +12,7 @@ function test() {
         		return err;
         	})
         })
+
+       alert("sending data");
        return "Data from js";
       }
