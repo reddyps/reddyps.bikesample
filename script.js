@@ -1,6 +1,7 @@
 function test() {
 //        toast("test")
-        alert("Hello! I am an alert box!!");
+//        alert("Hello! I am an alert box!!");
+        console.log("Grant token data received = ");
         try{
         PhonePe.PhonePe.build(PhonePe.Constants.Species.web).then((sdk) => {
         	sdk.fetchAuthToken().then((res) => {
@@ -13,7 +14,7 @@ function test() {
         });
         }
         catch(err){
-        console.log("Error " + err);
-        alert("error" +err);
+        console.log("script error " + err);
         }
+        console.log("end ends");
       }
