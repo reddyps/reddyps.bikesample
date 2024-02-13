@@ -38,6 +38,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "27719fa4f55e84f48654ad6a87f74aa6
 // start.
 const CORE = ["main.dart.js",
 "index.html",
+"script.js",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 
