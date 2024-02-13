@@ -84280,7 +84280,7 @@ case 2:return A.O(null,r)}})
 return A.P($async$pa,r)},
 Wb(){var s,r,q,p=null,o=this.Q.a1(t.Q)
 o.toString
-o.f.ex(A.e7(p,p,p,p,p,B.H,p,A.aW("version : 39",p,p,p,p,p,p,p),B.ap,B.az,p,p,p,p,p,p,p,p,p))
+o.f.ex(A.e7(p,p,p,p,p,B.H,p,A.aW("version : 40",p,p,p,p,p,p,p),B.ap,B.az,p,p,p,p,p,p,p,p,p))
 o=new A.aa($.ab,t.LR)
 s=document
 r=s.getElementsByTagName("head")[0]
@@ -84290,62 +84290,72 @@ new A.Qj(q).N(0,A.aI(["type","text/javascript","src","phonepe/phonepe.js"],s,s))
 J.aCV(q,"load",new A.a4j(this,new A.b4(o,t.zh)))
 r.appendChild(q).toString
 return o},
-rl(){var s=0,r=A.Q(t.H),q=1,p,o=this,n,m,l,k,j,i,h,g,f,e,d,c,b
-var $async$rl=A.M(function(a,a0){if(a===1){p=a0
-s=q}while(true)switch(s){case 0:e=window.PhonePe
-d=e.PhonePe
-c=e.Constants.Species
-d.loggingEnabled=!0
+rl(){var s=0,r=A.Q(t.H),q=1,p,o=this,n,m,l,k,j,i,h,g,f,e,d,c,b,a
+var $async$rl=A.M(function(a0,a1){if(a0===1){p=a1
+s=q}while(true)switch(s){case 0:d=window.PhonePe
+c=d.PhonePe
+b=d.Constants.Species
+c.loggingEnabled=!0
 window.toString
-k=typeof console!="undefined"
-k.toString
-if(k)window.console.log("[PHONEPE] LOGGING ENABLED")
-k=o.Q
-j=t.Q
-i=k.a1(j)
-i.toString
-i.f.ex(A.e7(null,null,null,null,null,B.H,null,A.aW("[PHONEPE] LOGGING ENABLED",null,null,null,null,null,null,null),B.ap,B.az,null,null,null,null,null,null,null,null,null))
+j=typeof console!="undefined"
+j.toString
+if(j)window.console.log("[PHONEPE] LOGGING ENABLED")
+j=o.Q
+i=t.Q
+h=j.a1(i)
+h.toString
+h.f.ex(A.e7(null,null,null,null,null,B.H,null,A.aW("[PHONEPE] LOGGING ENABLED",null,null,null,null,null,null,null),B.ap,B.az,null,null,null,null,null,null,null,null,null))
 q=3
-i=t.z
+h=t.z
 s=6
-return A.V(A.fa(d.build(c.web),i),$async$rl)
-case 6:n=a0
+return A.V(A.fa(c.build(b.web),h),$async$rl)
+case 6:n=a1
 window.toString
-h=A.h(n)
+g=A.h(n)
+f=typeof console!="undefined"
+f.toString
+if(f)window.console.log("[PHONEPE] SDK INIT DONE "+g)
+g=j.a1(i)
+g.toString
+g.f.ex(A.e7(null,null,null,null,null,B.H,null,A.aW("[PHONEPE] SDK INIT DONE",null,null,null,null,null,null,null),B.ap,B.az,null,null,null,null,null,null,null,null,null))
+s=7
+return A.V(A.fa(n.fetchAuthToken(),h),$async$rl)
+case 7:m=a1
+l=self.JSON.stringify(m)
+window.toString
+h=A.h(l)
 g=typeof console!="undefined"
 g.toString
-if(g)window.console.log("[PHONEPE] SDK INIT DONE "+h)
-h=k.a1(j)
-h.toString
-h.f.ex(A.e7(null,null,null,null,null,B.H,null,A.aW("[PHONEPE] SDK INIT DONE",null,null,null,null,null,null,null),B.ap,B.az,null,null,null,null,null,null,null,null,null))
-s=7
-return A.V(A.fa(n.fetchAuthToken(),i),$async$rl)
-case 7:m=a0
+if(g)window.console.log("[PHONEPE] result "+h)
 window.toString
-i=A.h(m)
 h=typeof console!="undefined"
 h.toString
-if(h)window.console.log("[PHONEPE] result "+i)
+if(h)window.console.log("Token: "+l)
 window.toString
-i=J.ct(m)
-h=typeof console!="undefined"
-h.toString
-if(h)window.console.log("Token: "+i)
+h=A.h(m)
+g=typeof console!="undefined"
+g.toString
+if(g)window.console.log("[PHONEPE] result "+h)
+window.toString
+h=J.ct(m)
+g=typeof console!="undefined"
+g.toString
+if(g)window.console.log("Token: "+h)
 q=1
 s=5
 break
 case 3:q=2
-b=p
-l=A.a7(b)
-i=A.h(l)
-j=k.a1(j)
-j.toString
-j.f.ex(A.e7(null,null,null,null,null,B.H,null,A.aW("[PHONEPE] Error "+i,null,null,null,null,null,null,null),B.ap,B.az,null,null,null,null,null,null,null,null,null))
+a=p
+k=A.a7(a)
+h=A.h(k)
+i=j.a1(i)
+i.toString
+i.f.ex(A.e7(null,null,null,null,null,B.H,null,A.aW("[PHONEPE] Error "+h,null,null,null,null,null,null,null),B.ap,B.az,null,null,null,null,null,null,null,null,null))
 window.toString
-k=A.h(l)
-j=typeof console!="undefined"
-j.toString
-if(j)window.console.log("[PHONEPE] Error "+k)
+j=A.h(k)
+i=typeof console!="undefined"
+i.toString
+if(i)window.console.log("[PHONEPE] Error "+j)
 s=5
 break
 case 2:s=1
