@@ -5,7 +5,8 @@ async function fetchAuthToken() {
        let sdk = await PhonePe.PhonePe.build(PhonePe.Constants.Species.web);
        console.log('[PHONEPE] SDK INIT DONE');
        result = await  sdk.fetchAuthToken();
-       console.log("Grant token data received = " + JSON.stringify(res));
+       console.log("Grant token data received = " + JSON.stringify(result));
+       result = JSON.stringify(result);
 //       .then((res) => {
 //               		console.log("Grant token data received = " + JSON.stringify(res));
 //               		result=JSON.stringify(res);
