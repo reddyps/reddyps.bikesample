@@ -84280,13 +84280,13 @@ case 2:return A.O(null,r)}})
 return A.P($async$pa,r)},
 Wb(){var s,r,q,p=null,o=this.Q.a1(t.Q)
 o.toString
-o.f.ex(A.e7(p,p,p,p,p,B.H,p,A.aW("version : 40",p,p,p,p,p,p,p),B.ap,B.az,p,p,p,p,p,p,p,p,p))
+o.f.ex(A.e7(p,p,p,p,p,B.H,p,A.aW("version : 41",p,p,p,p,p,p,p),B.ap,B.az,p,p,p,p,p,p,p,p,p))
 o=new A.aa($.ab,t.LR)
 s=document
 r=s.getElementsByTagName("head")[0]
 q=s.createElement("script")
 s=t.N
-new A.Qj(q).N(0,A.aI(["type","text/javascript","src","phonepe/phonepe.js"],s,s))
+new A.Qj(q).N(0,A.aI(["type","text/javascript","src","phonepe/phonepesdk.js"],s,s))
 J.aCV(q,"load",new A.a4j(this,new A.b4(o,t.zh)))
 r.appendChild(q).toString
 return o},
