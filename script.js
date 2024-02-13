@@ -5,6 +5,7 @@ function test() {
         PhonePe.PhonePe.build(PhonePe.Constants.Species.web).then((sdk) => {
         	sdk.fetchAuthToken().then((res) => {
         		console.log("Grant token data received = " + res);
+        		console.log("Grant token data received = " + JSON.stringify(res));
         		alert(res);
         		return res;
         	}).catch((err) => {
