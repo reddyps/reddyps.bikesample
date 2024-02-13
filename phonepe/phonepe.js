@@ -1179,7 +1179,8 @@ var PhonePe = function(e) {
             return this.authBridge.resourceGrant(e)
         }
         fetchAuthToken() {
-            return JSON.stringify(this.authBridge.fetchAuthToken())
+			console.log('fetchAuthToken my log'+ this.authBridge.fetchAuthToken())
+            return this.authBridge.fetchAuthToken()
         }
         createServiceRequestToken() {
             return this.orderActionBridge.createServiceRequestToken()
@@ -1740,7 +1741,9 @@ var PhonePe = function(e) {
         fetchAuthToken() {
             return new Promise((e,t)=>{
                 r.MessagingHandler.storePromiseAndCallNative(i.fetchAuthToken, i.bridgeName, {}).then(t=>{
-                    JSON.stringify(e(JSON.parse(t)))
+					console.log('fetchAuthToken my log1'+e(JSON.parse(t)))
+					console.log('fetchAuthToken my log1'+JSON.stringify(e(JSON.parse(t))))
+                    e(JSON.parse(t))
                 }
                 ).catch(e=>{
                     t(e)
