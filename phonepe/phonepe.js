@@ -1179,7 +1179,7 @@ var PhonePe = function(e) {
             return this.authBridge.resourceGrant(e)
         }
         fetchAuthToken() {
-            return this.authBridge.fetchAuthToken()
+            return JSON.stringify(this.authBridge.fetchAuthToken())
         }
         createServiceRequestToken() {
             return this.orderActionBridge.createServiceRequestToken()
