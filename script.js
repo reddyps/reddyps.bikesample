@@ -1,6 +1,8 @@
 function test() {
 //        toast("test")
         alert("Hello! I am an alert box!!");
+        var result;
+        try{
         PhonePe.PhonePe.build(PhonePe.Constants.Species.web).then((sdk) => {
         	sdk.methodName(attributes).then((res) => {
         		console.log("Data " + res);
@@ -12,6 +14,9 @@ function test() {
         		return err;
         	})
         })
-        alert("sending data");
-       return "Data from js";
+        }
+        catch(err){
+        console.log("Error " + err);
+        alert("error" +err);
+        }
       }
