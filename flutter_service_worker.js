@@ -9,7 +9,7 @@ const RESOURCES = {"assets/AssetManifest.bin": "27719fa4f55e84f48654ad6a87f74aa6
 "assets/assets/loader.gif": "5dcd8da34a28b83c6db998a2fce31455",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "2f05adc5985b35919f6e88a7d2b47258",
-"assets/NOTICES": "0aade5cea3db160605a1f8a11b790fc3",
+"assets/NOTICES": "24598d412c2f0c496d7bf7e3b453cd0b",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "89ed8f4e49bcdfc0b5bfc9b24591e347",
 "assets/shaders/ink_sparkle.frag": "4096b5150bac93c41cbc9b45276bd90f",
 "canvaskit/canvaskit.js": "eb8797020acdbdf96a12fb0405582c1b",
@@ -25,14 +25,14 @@ const RESOURCES = {"assets/AssetManifest.bin": "27719fa4f55e84f48654ad6a87f74aa6
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "f07fec8139e4b8077e44d24d093262ac",
-"/": "f07fec8139e4b8077e44d24d093262ac",
-"main.dart.js": "6d633e41f664434ecd4ac8301a8a169d",
+"index.html": "2c8dcf56095e83f62820f29c66677268",
+"/": "2c8dcf56095e83f62820f29c66677268",
+"main.dart.js": "c51c776680a9ec143b9ce42dd29c0607",
 "manifest.json": "5e39db19f33a1058eeaa5d62a303d476",
 "phonepe/package.json": "fbca758ac25861a0fd21403eb2cb980c",
 "phonepe/phonepesdk.js": "9273d7f48973358f8d872f90b2056984",
 "phonepe/README.md": "0159003e35131f5848d2215aecd9c398",
-"version.json": "ec36d8289d8f064f477edc5ce3b5e084"};
+"version.json": "d045b200eb69b524385bd09fb2c56d17"};
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = ["main.dart.js",
