@@ -25876,30 +25876,35 @@ s.a=r.h(a,"expiryInSeconds")
 s.b=r.h(a,"grantToken")
 return s},
 a9_:function a9_(){this.b=this.a=null},
-M4(){return new A.M3(null,null)},
-zF(a){var s=new A.M3("0",!1),r=J.an(a)
-s.a=r.h(a,"statusCode")
-s.b=r.h(a,"status")
-s.c=r.h(a,"errorDesc")
-s.d=r.h(a,"leadId")
-if(r.h(a,"score")!=null)s.e=r.h(a,"score")
-s.f=r.h(a,"id")
-s.at=r.h(a,"descision")
-s.r=r.h(a,"applicantFullName")
-s.w=r.h(a,"mobileNo")
-if(r.h(a,"emailId")!=null)s.x=r.h(a,"emailId")
-s.y=r.h(a,"pincode")
-s.z=r.h(a,"panNo")
-s.Q=r.h(a,"occupationType")
-s.as=r.h(a,"residentType")
-s.ay=r.h(a,"isEmailVerified")
-s.ax=r.h(a,"url")
-return s},
-M3:function M3(a,b){var _=this
+M4(){var s=null
+return new A.M3(s,s,s,s,s)},
+zF(a){var s="applicantFullName",r="mobileNo",q=new A.M3("0","","","",!1),p=J.an(a)
+q.a=p.h(a,"statusCode")
+q.b=p.h(a,"status")
+q.c=p.h(a,"errorDesc")
+q.d=p.h(a,"leadId")
+if(p.h(a,"score")!=null)q.e=p.h(a,"score")
+q.f=p.h(a,"id")
+q.at=p.h(a,"descision")
+if(p.h(a,s)!=null)q.r=p.h(a,s)
+if(p.h(a,r)!=null)q.w=p.h(a,r)
+if(p.h(a,"emailId")!=null)q.x=p.h(a,"emailId")
+q.y=p.h(a,"pincode")
+q.z=p.h(a,"panNo")
+q.Q=p.h(a,"occupationType")
+q.as=p.h(a,"residentType")
+q.ay=p.h(a,"isEmailVerified")
+q.ax=p.h(a,"url")
+return q},
+M3:function M3(a,b,c,d,e){var _=this
 _.d=_.c=_.b=_.a=null
 _.e=a
-_.ax=_.at=_.as=_.Q=_.z=_.y=_.x=_.w=_.r=_.f=null
-_.ay=b},
+_.f=null
+_.r=b
+_.w=c
+_.x=d
+_.ax=_.at=_.as=_.Q=_.z=_.y=null
+_.ay=e},
 Al(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r){return new A.aaS(b,j,e,n,m,k,p,g,i,d,r,c,o,q,l,f,h,a)},
 aaS:function aaS(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r){var _=this
 _.a=a
@@ -84273,14 +84278,14 @@ o.SM$=new A.ZD(A.aE(t.Gf))
 s=o
 try{n=s.u0$
 n===$&&A.a()
-n.kW$="https://apiclouduat.ltfs.com:1127/LTFSD2cApp/api"
+n.kW$="https://smedev.ltfs.com/LTFSD2cApp/api"
 n=s.u0$
 n===$&&A.a()
 n.sFO(B.me)
 n=s.u0$
 n===$&&A.a()
 n.e=B.me
-A.af("GlobalVariables().url https://apiclouduat.ltfs.com:1127/LTFSD2cApp/api")
+A.af("GlobalVariables().url https://smedev.ltfs.com/LTFSD2cApp/api")
 n=s.SL$
 n.C(n,new A.Ka(new A.a8m(),new A.a8n(),new A.a8o(),p,p,p))}catch(q){r=A.a4(q)
 n=J.bc(r)
@@ -85109,7 +85114,7 @@ p.toString
 s=$.dr
 s.toString
 r=t.Ud
-return new A.uw(A.axB(new A.zK(A.auJ(!1,B.bP,A.e_(A.hx(q,A.az("Loan Application",q,q,q,q,A.aY().$2$fontSize$fontWeight(20,B.I),q,q),B.u,q,q,q,q,q,B.mi,q),q,q)),new A.G(p*100,s*10),q),B.l,A.auO(A.auN(new A.adC(this),new A.adD(),r,t.ll),new A.adE(),r)),new A.adF(),q)},
+return new A.uw(A.axB(new A.zK(A.auJ(!1,B.bP,A.e_(A.hx(q,A.az("Loan Application",q,q,q,q,A.aY().$2$fontSize$fontWeight(20,B.I),q,q),B.u,q,q,q,q,q,B.mi,q),q,q)),new A.G(p*100,s*8),q),B.l,A.auO(A.auN(new A.adC(this),new A.adD(),r,t.ll),new A.adE(),r)),new A.adF(),q)},
 XJ(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=null,c=$.dq
 c.toString
 c*=100
@@ -85317,7 +85322,7 @@ a2=t._
 s=16
 return A.bY(a2.b(a0)?a0:A.co(a0,a1),$async$bR,r)
 case 16:k=b2
-s=k.a===200?17:19
+s=k.a!==200?17:19
 break
 case 17:A.af("GettingDetailsEvent "+A.h(k.c))
 a=k.c
@@ -85327,9 +85332,9 @@ q=[1]
 return A.bY(A.ds(new A.oz("Getting User Details : "+a)),$async$bR,r)
 case 20:s=18
 break
-case 19:s=k.a!==200?21:22
+case 19:s=k.a===200?21:22
 break
-case 21:j=A.Al(null,null,null,null,null,null,null,null,null,"9535177876",null,null,null,null,null,null,null,null)
+case 21:j=A.Al(null,null,null,null,null,null,null,null,null,k.w,null,null,null,null,null,null,null,null)
 a=a.tX(j)
 s=23
 return A.bY(a2.b(a)?a:A.co(a,a1),$async$bR,r)
@@ -85340,9 +85345,15 @@ A.af("response1 "+A.h(i.b))
 s=i.a!==200?24:26
 break
 case 24:A.af("GettingDetailsEvent "+A.h(i.c))
+a=k.r
+a.toString
+a0=k.w
+a0.toString
+a1=k.x
+a1.toString
 s=27
 q=[1]
-return A.bY(A.ds(new A.C2("Naveen Kumar P S","9535177876","reddypsnaveenKumar@gmail.com")),$async$bR,r)
+return A.bY(A.ds(new A.C2(a,a0,a1)),$async$bR,r)
 case 27:s=25
 break
 case 26:s=28
@@ -85576,7 +85587,7 @@ s=$.dq
 s.toString
 r=$.dr
 r.toString
-return new A.uw(A.axB(new A.zK(A.auJ(!1,B.bP,A.e_(A.hx(q,A.az("Loan Application",q,q,q,q,A.aY().$2$fontSize$fontWeight(20,B.I),q,q),B.u,q,q,q,q,q,B.mi,q),q,q)),new A.G(s*100,r*10),q),B.l,A.auN(new A.a5b(this),new A.a5c(this),t.V,t.an)),new A.a5d(),q)},
+return new A.uw(A.axB(new A.zK(A.auJ(!1,B.bP,A.e_(A.hx(q,A.az("Loan Application",q,q,q,q,A.aY().$2$fontSize$fontWeight(20,B.I),q,q),B.u,q,q,q,q,q,B.mi,q),q,q)),new A.G(s*100,r*8),q),B.l,A.auN(new A.a5b(this),new A.a5c(this),t.V,t.an)),new A.a5d(),q)},
 agp(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=this,a4=null,a5=a3.VC("1",!0),a6=$.dq
 a6.toString
 a6=A.bw(A.Jh(A.az("Required Details",a4,a4,a4,a4,A.aY().$3$color$fontSize$fontWeight(B.j,15,B.P),a4,a4)),a4,a6*30)
