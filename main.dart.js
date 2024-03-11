@@ -85374,7 +85374,7 @@ q=t.Ud
 q=A.avC(A.avB(new A.ae5(this),new A.ae6(this),q,t.ll),new A.ae7(),q)
 p=$.cO
 p.toString
-return A.aym(new A.zU(r,new A.F(n*100,s*8),o),B.m,q,A.b4(A.avE(A.dk(A.b([A.ay("V1.0.10",o,o,o,o,A.aZ(B.j,15,B.i,o),o,o)],t.p),B.J,B.e9,B.E)),p*6,o))},
+return A.aym(new A.zU(r,new A.F(n*100,s*8),o),B.m,q,A.b4(A.avE(A.dk(A.b([A.ay("V1.0.11",o,o,o,o,A.aZ(B.j,15,B.i,o),o,o)],t.p),B.J,B.e9,B.E)),p*6,o))},
 XX(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=null,c=$.dd
 c.toString
 c*=100
@@ -85811,7 +85811,7 @@ q=new A.bQ().RJ()
 p=A.avB(new A.a5v(this),new A.a5w(this,a),t.Q,t.an)
 o=$.cO
 o.toString
-return A.aym(new A.zU(q,new A.F(s*100,r*6),n),B.m,p,A.b4(A.avE(A.dk(A.b([A.ay("V1.0.10",n,n,n,n,A.aZ(B.j,15,B.i,n),n,n)],t.p),B.J,B.e9,B.E)),o*6,n))},
+return A.aym(new A.zU(q,new A.F(s*100,r*6),n),B.m,p,A.b4(A.avE(A.dk(A.b([A.ay("V1.0.11",n,n,n,n,A.aZ(B.j,15,B.i,n),n,n)],t.p),B.J,B.e9,B.E)),o*6,n))},
 agE(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2=this,a3=null,a4=a2.VO("1",!0),a5=$.dd
 a5.toString
 a5=A.b4(A.ml(A.ay("Required Details",a3,a3,a3,a3,A.aZ(B.j,15,B.L,a3),a3,a3)),a3,a5*30)
@@ -86499,42 +86499,35 @@ new A.Rc(p).O(0,A.aK(["type","text/javascript","src","phonepe/phonepesdk.js"],r,
 J.aEJ(p,"load",new A.a0c(this,new A.b8(s,t.zh)))
 q.appendChild(p).toString
 return s},
-rw(){var s=0,r=A.N(t.z),q=1,p,o=this,n,m,l,k,j,i,h,g,f,e,d
+rw(){var s=0,r=A.N(t.z),q=1,p,o=this,n,m,l,k,j,i,h,g,f
 var $async$rw=A.I(function(a,b){if(a===1){p=b
-s=q}while(true)switch(s){case 0:g=window.PhonePe
-f=g.PhonePe
-e=g.Constants.Species
-f.loggingEnabled=!0
+s=q}while(true)switch(s){case 0:i=window.PhonePe
+h=i.PhonePe
+g=i.Constants.Species
+h.loggingEnabled=!0
 q=3
-j=t.z
+l=t.z
 s=6
-return A.P(A.fm(f.build(e.web),j),$async$rw)
+return A.P(A.fm(h.build(g.web),l),$async$rw)
 case 6:n=b
 s=7
-return A.P(A.fm(n.closeApp(),j),$async$rw)
-case 7:m=b
-l=self.JSON.stringify(m)
-window.toString
-j=A.h(l)
-i=typeof console!="undefined"
-i.toString
-if(i)window.console.log("[PHONEPE] result "+j)
-window.toString
-j=typeof console!="undefined"
-j.toString
-if(j)window.console.log("Token: "+l)
+return A.P(A.fm(n.closeApp(),l),$async$rw)
+case 7:window.toString
+l=typeof console!="undefined"
+l.toString
+if(l)window.console.log("[PHONEPE] result closed")
 q=1
 s=5
 break
 case 3:q=2
-d=p
-k=A.a2(d)
-j=J.aX(k)
-o.a=j
+f=p
+m=A.a2(f)
+l=J.aX(m)
+o.a=l
 window.toString
-i=typeof console!="undefined"
-i.toString
-if(i)window.console.log("[PHONEPE] Close App catch result "+j)
+j=typeof console!="undefined"
+j.toString
+if(j)window.console.log("[PHONEPE] Close App catch result "+l)
 s=5
 break
 case 2:s=1
