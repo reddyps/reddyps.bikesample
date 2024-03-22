@@ -14,7 +14,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/reddyps.bikesample.io/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -35,15 +35,17 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "1566894415";
+    const serviceWorkerVersion = "1845479178";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
   <script src="phonepe/phonepesdk.js" defer=""></script>
 </head>
 <body>
-  <img src="icons/loader.gif" class="center" />
-  <p class="center1">Please wait application is Loading...!</p>
+<div class="wrapper">
+  <img src="icons/loader.gif" />
+  <p>Please wait application is Loading...!</p>
+</div>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
