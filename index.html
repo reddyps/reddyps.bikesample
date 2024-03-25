@@ -47,7 +47,7 @@
   <img src="icons/LTFS-Logo.png" />
 </div>
   <script>
-    window.addEventListener('load', function(ev) {
+    setTimeout(function() {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
@@ -59,7 +59,7 @@
           });
         }
       });
-    });
+    }, 2000);
   </script>
 </body>
 </html>
